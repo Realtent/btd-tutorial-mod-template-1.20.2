@@ -2,6 +2,7 @@ package net.realtent.btdtutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.realtent.btdtutorialmod.block.BTDBlocks;
 import net.realtent.btdtutorialmod.item.BTDGroups;
 import net.realtent.btdtutorialmod.item.BTDGroups;
 import net.realtent.btdtutorialmod.item.BTDItems;
@@ -15,6 +16,8 @@ public class BTDTutorialMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		BTDGroups.registerItemGroups();
+
 		BTDItems.registerModItems();
+		BTDBlocks.registerModBlocks();
 	}
 }
