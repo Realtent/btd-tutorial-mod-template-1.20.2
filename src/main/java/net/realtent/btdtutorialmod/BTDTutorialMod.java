@@ -2,6 +2,9 @@ package net.realtent.btdtutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.realtent.btdtutorialmod.item.BTDGroups;
+import net.realtent.btdtutorialmod.item.BTDGroups;
+import net.realtent.btdtutorialmod.item.BTDItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,7 +14,7 @@ public class BTDTutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-		LOGGER.info("Hello Fabric world!");
+		BTDGroups.registerItemGroups();
+		BTDItems.registerModItems();
 	}
 }
