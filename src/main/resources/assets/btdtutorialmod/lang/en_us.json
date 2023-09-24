@@ -1,6 +1,8 @@
 {
-  "item.btdtutorialmod.monkeymoney": "Monkey Money",
+  "item.btdtutorialmod.monkey_money": "Monkey Money",
   "item.btdtutorialmod.cash": "Cash",
+
+  "block.btdtutorialmod.cash_crate": "Cash Crate",
 
   "itemgroup.btd": "Bloons Tower Defense"
 }

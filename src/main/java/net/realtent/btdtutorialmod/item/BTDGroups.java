@@ -9,6 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.realtent.btdtutorialmod.BTDTutorialMod;
+import net.realtent.btdtutorialmod.block.BTDBlocks;
 
 public class BTDGroups {
     public static final ItemGroup BTD_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -19,6 +20,8 @@ public class BTDGroups {
                         entries.add(BTDItems.MONKEY_MONEY);
 
                         entries.add(Items.IRON_SWORD);
+
+                        entries.add(BTDBlocks.CASH_CRATE);
                     }).build());
     public static void registerItemGroups(){
         BTDTutorialMod.LOGGER.info("Registering Item Groups for " + BTDTutorialMod.MOD_ID);

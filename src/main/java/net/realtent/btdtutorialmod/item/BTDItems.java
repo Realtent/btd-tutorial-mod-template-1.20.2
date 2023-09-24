@@ -11,7 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registry;
 
 public class BTDItems {
-    public static final Item MONKEY_MONEY = registerItem("monkeymoney", new Item(new FabricItemSettings()));
+    public static final Item MONKEY_MONEY = registerItem("monkey_money", new Item(new FabricItemSettings()));
     public static final Item CASH = registerItem("cash", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){
@@ -23,7 +23,7 @@ public class BTDItems {
         return Registry.register(Registries.ITEM, new Identifier(BTDTutorialMod.MOD_ID, name), item);
     }
     public static void registerModItems(){
-        BTDTutorialMod.LOGGER.info("Registering Mod Items for " + BTDTutorialMod.MOD_ID);
+        BTDTutorialMod.LOGGER.info("Registering BTD Items for " + BTDTutorialMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(BTDItems::addItemsToIngredientItemGroup);
     }
