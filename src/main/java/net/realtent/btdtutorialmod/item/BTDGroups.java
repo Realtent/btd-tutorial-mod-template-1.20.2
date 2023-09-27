@@ -22,6 +22,7 @@ public class BTDGroups {
                         entries.add(Items.IRON_SWORD);
 
                         entries.add(BTDBlocks.CASH_CRATE);
+                        entries.add(BTDBlocks.MONEY_CUBE);
                     }).build());
     public static void registerItemGroups(){
         BTDTutorialMod.LOGGER.info("Registering Item Groups for " + BTDTutorialMod.MOD_ID);

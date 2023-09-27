@@ -14,6 +14,8 @@ import net.realtent.btdtutorialmod.BTDTutorialMod;
 public class BTDBlocks {
     public static final Block CASH_CRATE = registerBlock("cash_crate",
             new Block(FabricBlockSettings.copyOf(Blocks.BARREL)));
+    public static final Block MONEY_CUBE = registerBlock("money_cube",
+            new Block(FabricBlockSettings.copyOf(Blocks.GREEN_WOOL)));
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(BTDTutorialMod.MOD_ID, name), block);
